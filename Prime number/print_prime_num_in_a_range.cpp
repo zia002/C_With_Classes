@@ -1,6 +1,6 @@
 /*
 Print prime number from A to B;
-and how print in this range how many prime numbers..
+and in this range how many prime numbers are in there..
 */
 #include<iostream>
 using namespace std;
