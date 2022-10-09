@@ -1,0 +1,19 @@
+//Reverse the number 
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,tem,rem;
+    int rev;
+    cout<<"Enter Your number:";
+    cin>>n;
+    tem=n;
+    while(tem!=0)
+    {
+        rem=tem%10;
+        tem=tem/10;
+        rev=rev*10 + rem;
+    }
+    cout<<"Reverss of the number:"<<rev;
+    return 0;
+}
