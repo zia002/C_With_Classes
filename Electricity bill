@@ -1,0 +1,43 @@
+/*
+Enter Your total kwh or unit. and your electricity 
+bill will make by following the below rules::
+For first 50 units taka 3/unit.
+For next 100 units taka 4/unit.
+For next 100 units taka 5/unit.
+For unit above 250 taka 7/unit.
+An additional subcharge of 20% is added to the bill.
+*/
+#include<iostream>
+using namespace std;
+int main()
+{
+    long unit,bill=0;
+    float tbill;
+    cout<<"Enter The Amount of Unit:";
+    cin>>unit;
+    if(unit<=50)
+    {
+    bill=bill + unit*3 ;
+    }
+    if(unit>50 && unit<=150)
+    {
+        bill=bill+ 50*3;
+        bill=bill+ (unit-50)*4 ;
+    }
+    if(unit>150 && unit<=250)
+    {
+        bill=bill + 50*3 ;
+        bill=bill + 100*4 ;
+        bill=bill+((unit-150)*5);
+    }
+    if(unit>250 )
+    {
+        bill=bill+ 50*3;
+        bill=bill + 100*4;
+        bill=bill + 100*5;
+        bill=bill+ (unit-250)*7 ;
+    }
+    tbill=bill + bill/5 ;
+    cout<<"Totall Electricity Bill="<<(float)tbill;
+return 0;
+}
