@@ -1,0 +1,14 @@
+//ASCII value and their character's from 33 to 127.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i;
+    char ch;
+    for(i=33;i<=127;i++)
+    {
+    ch=i;
+    cout<<"ASCII value:"<<i<<" character="<<ch<<endl;
+    }
+    return 0;
+}
