@@ -1,0 +1,69 @@
+/*
+Enter your amount of money.And this programme
+will print out how many notes of 1000,500,100,
+50,20,10,5,2,1 you need..
+*/
+#include<iostream>
+using namespace std;
+int main()
+{
+    long long taka;
+    int t1,t2,t3,t4,t5,t6,t7,t8,t9;
+    cout<<"Enter Amount Of Taka:";
+        cin>>taka;
+    if(taka>=1000 && taka/1000>=1 )
+    {
+        t1=taka/1000;
+        taka=taka%1000;
+    }
+    if(taka>=500 && taka/500 >= 1)
+    {
+        t2=taka/500; 
+        taka=taka%500;
+    }
+    if(taka>=100 && taka/100>=1)
+    {
+        t3=taka/100;
+        taka=taka%100;
+    }
+    if(taka>=50 && taka/50>=1)
+    {
+        t4=taka/50;
+        taka=taka%50;
+    }
+    if(taka>=20 && taka/20>=1)
+    {
+        t5=taka/20;
+        taka=taka%20;
+    }
+    if(taka>=10 && taka/10>=1)
+    {
+        t6=taka/10;
+        taka=taka%10;
+    }
+    if(taka>=5 && taka/5>=1)
+    {
+        t7=taka/5;
+        taka=taka%5;
+    }
+    if(taka>=2 && taka/2>=1)
+    {
+        t8=taka/2;
+        taka=taka%2;
+    }
+    if(taka==1)
+    {
+        t9=taka/1;
+    }
+    cout<<"1000 note:"<<t1<<endl;
+    cout<<"500  note:"<<t2<<endl;
+    cout<<"100  note:"<<t3<<endl;
+    cout<<"50   note:"<<t4<<endl;
+    cout<<"20   note:"<<t5<<endl;
+    cout<<"10   note:"<<t6<<endl;
+    cout<<"5    note:"<<t7<<endl;
+    cout<<"2    note:"<<t8<<endl;
+    cout<<"1    note:"<<t9<<endl;
+    return 0;
+}
+    
