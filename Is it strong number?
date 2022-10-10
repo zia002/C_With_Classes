@@ -1,0 +1,28 @@
+//is it Strong number??
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,j,sum=0,tem,rem,fact=1;
+    cout<<"Enter Your Number:";
+    cin>>n;
+    tem=n;
+    while(tem!=0)
+    {
+        fact=1;
+        rem=tem%10;
+        for(i=1; i<=rem; i++)
+        {
+            fact=fact*i;
+        }
+        sum=sum+fact;
+        tem=tem/10;
+    }
+    if(sum==n)
+    {
+        cout<<"Yes,it is Strong number";
+    }
+    else
+        cout<<"No,it is not a strong number";
+    return 0;
+}
