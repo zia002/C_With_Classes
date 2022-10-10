@@ -1,0 +1,27 @@
+//Reverse the number and is it palindrome number??
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,tem,rem;
+    int rev=0;
+    cout<<"Enter Your number:";
+    cin>>n;
+    tem=n;
+    while(tem!=0)
+    {
+        rem=tem%10;
+        tem=tem/10;
+        rev=rev*10 + rem;
+    }
+    cout<<"Reverss of the number:"<<rev<<endl;
+    if(rev==n)
+    {
+        cout<<"Yes! It is a Palindrome Number";
+    }
+    else
+    {
+        cout<<"No it's not Palindrome Number";
+    }
+    return 0;
+}
