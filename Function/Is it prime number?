@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+void fun(int x)
+{
+    int i;
+    for(i=2; i<x; i++)
+    {
+        if(x%i!=0)
+        {
+            if(i==(x-1))
+            {
+                cout<<"It is a  prime number";
+                break;
+            }
+        }
+        else
+        {
+            cout<<"Not a prime number";
+            break;
+        }
+    }
+}
+int main()
+{
+    int n;
+    cout<<"Enter your value:";
+    cin>>n;
+    fun(n);
+    return 0;
+}
