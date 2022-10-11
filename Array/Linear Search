@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,arr[10]= {9,0,2,5,3,7,8,4,1,6};
+    cout<<"Enter Your Searching Value:";
+    cin>>n;
+    for(i=0;i<10; i++)
+    {
+        if(n==arr[i])
+        {
+            cout<<"Yes!Your Value Exist"<<endl;
+            cout<<"Value Exist in array index:"<<i<<endl;
+            goto end;
+        }
+    }
+    cout<<"Your Value Does't Exist";
+    end:
+    return 0;
+}
