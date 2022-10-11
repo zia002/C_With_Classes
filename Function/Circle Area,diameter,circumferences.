@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+float dia(float r)
+{
+    return (2*r);
+}
+float cir(float r)
+{
+    return (2*3.1416*r);
+}
+float are(float r)
+{
+    return (2*3.1416*r*r);
+}
+int main()
+{
+    float r,d,c,a;
+    cout<<"Enter Radius:";
+    cin>>r;
+    d=dia(r);
+    cout<<"Diameter:"<<d<<endl;
+    c=cir(r);
+    cout<<"Circumferences:"<<c<<endl;
+    a=are(r);
+    cout<<"Area:"<<a<<endl;
+    return 0;
+}
