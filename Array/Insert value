@@ -1,0 +1,35 @@
+//insert value in a specific index position.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,p,v,i,arr[60];
+    cout<<"Enter array size:";
+    cin>>n;
+    cout<<"Enter Array Value:";
+    for(i=0; i<n; i++)
+    {
+        cin>>arr[i];
+    }
+    cout<<"Primary Array:";
+    for(i=0; i<n; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    cout<<"\nIndex Position to insert value:";
+    cin>>p;
+    //Now shifting,in position:6 ← position:5 value.
+    for(i=n+1 ; i>p; i--)
+    {
+        arr[i]=arr[i-1];
+    }
+    cout<<"Enter value:";
+    cin>>v;
+    arr[p]=v;
+    cout<<"Update Array:";
+    for(i=0; i<=n; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
