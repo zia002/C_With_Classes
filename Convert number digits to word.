@@ -13,6 +13,9 @@ int main()
         rem=tem%10;
         switch(rem)
         {
+        case 0:
+        cout<<"Zero ";
+        break;
         case 1:
         cout<<"One ";
         break;
